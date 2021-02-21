@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<head>
+  <meta name=”viewport” content=”width=device-width, initial-scale=1.0” >
+  <LINK href="style.css" rel="stylesheet" type="text/css">
+  <style>
+    @import url('https://fonts.googleapis.com/css?family=Montserrat');
+body {
+  background: linear-gradient(to right, #00DCFF, dodgerblue );
+  overflow-x: hidden;
+}
+.i {
+  box-shadow: 5px 5px 10px green;
+}
+.menu {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 10%;
+  padding: 0;
+  text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+ }
+
+a {
+  text-decoration: none;
+}
+
+
+.menu i {
+  font-size: 32px;
+}
+
+.menu a {
+  margin: 30px 0;
+}
+
+.page {
+  position: absolute;
+  height: 100%;
+	align-items: center;
+}
+
+#p1 {
+	width: 100%;
+  background: linear-gradient(to right, #00DCFF, dodgerblue );
+
+	left: 0;
+}
+
+#p2 {
+  background: linear-gradient(to right, royalblue, dodgerblue );
+}
+
+#p3 {
+  background: linear-gradient(to right, royalblue, blue );
+}
+
+#p4 {
+  background: linear-gradient(to right, royalblue, blue );
+}
+
+#p2, #p3, #p4 {
+	width: 90%;
+  left: 10%;
+	transform: translateX(-190%);
+}
+
+.menu a {
+  transition: all .5s ease-out;
+	color: #fff;
+}
+
+.menu a:hover {
+  opacity: 0.5;
+}
+
+.page {
+	font-family: 'Montserrat', sans-serif;
+	color: #fff;
+}
+
+.page i {
+	font-size: 80px;
+}
+
+.page h2 {
+	font-size: 36px;
+	line-height: 2;
+}
+.btn {
+  display: inline-block;
+  margin: 15px 15px 0;
+  padding: .5em 1em;
+  font-size: 26px;
+  font-size: 16px;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #007DFF;
+  border-radius: 6px;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  -webkit-box-shadow: 0 0 0 -2px cyan, 0 0 0 -1px #fe4365;
+  box-shadow: 0 0 0 -2px cyan, 0 0 0 -1px #fe4365;
+  border: none;
+  -webkit-transition: -webkit-box-shadow .3s;
+  transition: box-shadow .3s;
+}
+.btn:hover, a.btn:focus {
+  -webkit-box-shadow: 0 0 0 2px cyan, 0 0 0 4px skyblue;
+  box-shadow: 0 0 0 2px cyan, 0 0 0 4px skyblue;
+  -webkit-transition-timing-function: cubic-bezier(0.6, 4, 0.3, 0.8);
+  transition-timing-function: cubic -bezier(0.6, 4, 0.3, 0.8);
+  -webkit-animation: gelatine 0.5s 1;
+  animation: gelatine 0.5s 1;
+}
+
+
+.btn:active,
+.btn-secondary:active {
+  -webkit-transition-duration: 0;
+  transition-duration: 0;
+  -webkit-box-shadow: 0 0 0 2px cyan, 0 0 0 4px #3ac7bd;
+  box-shadow: 0 0 0 2px cyan, 0 0 0 4px #3ac7bd;
+}
+
+
+@keyframes gelatine {
+  from, to {
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+  }
+
+  25% {
+    -webkit-transform: scale(0.9, 1.1);
+      transform: scale(0.9, 1.1);
+    }
+
+  50% {
+    -webkit-transform: scale(1.1, 0.9);
+    transform: scale(1.1, 0.9);
+  }
+
+  75% {
+    -webkit-transform: scale(0.95, 1.05);
+    transform: scale(0.95, 1.05);
+  }
+
+  from, to {
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+  }
+
+  25% {
+    -webkit-transform: scale(0.9, 1.1);
+    transform: scale(0.9, 1.1);
+  }
+
+  50% {
+    -webkit-transform: scale(1.1, 0.9);
+    transform: scale(1.1, 0.9);
+  }`
+
+  75% {
+    -webkit-transform: scale(0.95, 1.05);
+    transform: scale(0.95, 1.05);
+  }
+}
+@-webkit-keyframes gelatine {
+  from, to {
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+  }
+
+  25% {
+    -webkit-transform: scale(0.9, 1.1);
+    transform: scale(0.9, 1.1);
+  }
+
+  50% {
+    -webkit-transform: scale(1.1, 0.9);
+    transform: scale(1.1, 0.9);
+  }
+
+  75% {
+    -webkit-transform: scale(0.95, 1.05);
+    transform: scale(0.95, 1.05);
+  }
+
+  from, to {
+    -webkit-transform: scale(1, 1);
+  transform: scale(1, 1);
+}
+
+25% {
+  -webkit-transform: scale(0.9, 1.1);
+  transform: scale(0.9, 1.1);
+}
+
+50% {
+  -webkit-transform: scale(1.1, 0.9);
+  transform: scale(1.1, 0.9);
+  }
+
+  75% {
+    -webkit-transform: scale(0.95, 1.05);
+    transform: scale(0.95, 1.05);
+  }
+}
+
+.page span {
+	font-size: 17px;
+}
+
+.page {
+	transition: all .6s cubic-bezier(.5, .2, .2, 1.1);
+}
+
+#t2:target #p2,
+#t3:target #p3,
+#t4:target #p4 {
+  transform: translateX(0%);
+  transition-delay: .4s !important;
+}
+
+#t2:target #p1,
+#t3:target #p1,
+#t4:target #p1 {
+  background: royalblue;
+	filter: blur(3px)
+}
+
+#t2:target .menu a,
+#t3:target .menu a,
+#t4:target .menu a {
+  transform: scale(.6);
+  transition-delay: .25s;
+}
+
+#t2:target .menu .two,
+#t3:target .menu .three,
+#t4:target .menu .four {
+  transform: scale(1.2);
+}
+
+.page span a {
+  color: yellow;
+  transition: all 250ms ease-out;
+}
+
+.page span a:hover {
+  color: #FFF;
+}
+
+.page .wrap {
+	width: 50%;
+  transform: translateX(200%);
+  transition: all .5s cubic-bezier(.25, 1, .5, 1.25);
+}
+
+.page#p1 .wrap {
+  transform: translateX(0%);
+}
+
+#t2:target .page#p2 .wrap {
+  transform: translateX(0);
+  transition-delay: 1s;
+}
+</style>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+</head>
+<body>
+	<div id="t1">
+		<div id="t2">
+			<div id="t3">
+				<div id="t4">
+					<div class="menu">
+            <a href="#t1" class="one" style="font-size: 25px; text-style: bold;">Class&nbsp; <i class="fas fa-user-friends" style="  text-shadow: 5px 5px 10px cyan;"></i></a>
+            <a href="#t2" class="two" style="font-size: 25px; text-style: bold;">Work&nbsp; <i class="fas fa-book-reader" style="  text-shadow: 5px 5px 10px cyan;"></i></a>
+
+          </div>
+
+					<div class="page" id="p1">
+						<div class="wrap">
+
+                  </div>
+                    <script>
+
+                    var variable = ["59864", "", "3"];
+
+      function validateForm() {
+        var x = document.forms["myForm"]["value"].value;
+        if (variable.indexOf(x) == -1) {
+          alert("Sorry, that's an invalid code! That class doesn't exist.");
+          return false;
+        }
+
+        var x = document.forms["myForm"]["value"].value;
+        if (x == "59864") {
+          window.location.href = "index.php";
+
+          return false;
+        }
+
+
+        var x = document.forms["myForm"]["value"].value;
+        if (x == "breh") {
+          window.location.href = "index2.php";
+
+          return false;
+        }
+      }
+
+                    </script>
+                    <body>
+                      <br><br><br><br><br><br><br><br><br><br><br>
+<center>
+  <div class="txt2">
+    <h1 class="ml5">
+      <span class="text-wrapper">
+        <span class="letters letters-left" style="font-size: 60px;">Join</span>
+        <span class="letters ampersand" style="font-size: 60px;">&nbsp;Or&nbsp;</span>
+        <span class="letters letters-right" style="font-size: 60px; margin-left: 40px;">enter a class</span>
+      </span>
+    </h1>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+
+<style>
+  .ml5 {
+  position: relative;
+  font-weight: 300;
+  font-size: 60px;
+color: white;}
+
+.ml5 .text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.1em;
+  padding-right: 0.05em;
+  padding-bottom: 0.15em;
+  line-height: 1.9em;
+}
+
+.ml5 .line {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  height: 3.5px;
+  width: 100%;
+  background-color: white;
+  transform-origin: 2.5 0;
+}
+
+.ml5 .ampersand {
+  font-family: Helvetica, serif;
+  font-weight: 400;
+  width: 1em;
+
+}
+
+.ml5 .letters {
+  display: inline-block;
+  opacity: 0;
+}
+</style>
+<Script>
+  anime.timeline({loop: true})
+  .add({
+    targets: '.ml5 .line',
+    opacity: [0.5,1],
+    scaleX: [0, 1],
+    easing: "easeInOutExpo",
+    duration: 700
+  }).add({
+    targets: '.ml5 .line',
+    duration: 600,
+    easing: "easeOutExpo",
+    translateY: (el, i) => (-0.625 + 0.625*2*i) + "em"
+  }).add({
+    targets: '.ml5 .ampersand',
+    opacity: [0,1],
+    scaleY: [0.5, 1],
+    easing: "easeOutExpo",
+    duration: 600,
+    offset: '-=600'
+  }).add({
+    targets: '.ml5 .letters-left',
+    opacity: [0,1],
+    translateX: ["0.5em", 0],
+    easing: "easeOutExpo",
+    duration: 600,
+    offset: '-=300'
+  }).add({
+    targets: '.ml5 .letters-right',
+    opacity: [0,1],
+    translateX: ["-0.5em", 0],
+    easing: "easeOutExpo",
+    duration: 600,
+    offset: '-=600'
+  }).add({
+    targets: '.ml5',
+    opacity: 0,
+    duration: 1000,
+    easing: "easeOutExpo",
+    delay: 10000000000000000000000000000000000000000000000000000000000
+  });
+  </script>
+  </div></center>
+                      <center><div class="txt">
+<p style="font-size: 20px; color: white; text-decoration: none;">Enter your class code below. If you've forgotten your code, ask your teacher for it.</p>
+</div></center>
+
+<style>
+  .txt {
+    width: 110%;
+  }
+  .txt2 {
+    width: 100%;
+  }
+  </style>
+                                            <center>
+                                              <input type='text' class='path' style="color: #222; background: white; padding: 5px; border-radius: 6px; border: none;">
+                                              <br><br><input type="submit" class = "btn" style="font-size: 20px;" value="Enter/submit" target="_blank"/>
+
+                                              <script>
+                                                  let btn = document.querySelector('.btn');
+                                                  let inputPath = document.querySelector('.path');
+
+                                                  btn.addEventListener('click', function(){
+                                                      location.href = inputPath.value;
+                                                  });
+                                              </script>
+
+                      </center>
+
+
+
+						</div>
+          </div>
+<a class="typeform-share button" href="https://form.typeform.com/to/NciGoiwQ?typeform-medium=embed-snippet" data-mode="popover" style="width:54px;height:54px;position:fixed;box-shadow:0px 2px 12px rgba(0, 0, 0, 0.06), 0px 2px 4px rgba(0, 0, 0, 0.08);right:26px;bottom:26px;border-radius:50%;display:flex;align-items:center;justify-content:center;cursor:pointer;background:#3A7685;overflow:hidden;line-height:0;" target="_blank"> <span class="icon"> <svg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg' style="margin-top:6px;"> <path d='M21 0H0V9L10.5743 24V16.5H21C22.6567 16.5 24 15.1567 24 13.5V3C24 1.34325 22.6567 0 21 0ZM7.5 9.75C6.672 9.75 6 9.07875 6 8.25C6 7.42125 6.672 6.75 7.5 6.75C8.328 6.75 9 7.42125 9 8.25C9 9.07875 8.328 9.75 7.5 9.75ZM12.75 9.75C11.922 9.75 11.25 9.07875 11.25 8.25C11.25 7.42125 11.922 6.75 12.75 6.75C13.578 6.75 14.25 7.42125 14.25 8.25C14.25 9.07875 13.578 9.75 12.75 9.75ZM18 9.75C17.172 9.75 16.5 9.07875 16.5 8.25C16.5 7.42125 17.172 6.75 18 6.75C18.828 6.75 19.5 7.42125 19.5 8.25C19.5 9.07875 18.828 9.75 18 9.75Z' fill='white' /> </svg> </span> </a> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm_share", b="https://embed.typeform.com/"; if(!gi.call(d,id)){ js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script>          <div class="page" id="p2">
+
+    <center><h1 style="color: white; text-shadow: 3px 3px 10px black; font-size: 70px; ">Classwork</h1></center>
+<center><div class="txt">
+
+<center><p style="color: white; font-size: 19px;">You can add classwork and assignments that your teacher has posted here. The list will save even after your tab is lost.</p></center>
+<br>
+</div>  </center>
+<style>
+  .txt {
+    width: 50%;
+  }
+  </style>
+
+            <script src="index.js"></script>
+            <LINK href="style.css" rel="stylesheet" type="text/css">
+
+            <div class="well">
+              <div id="container">
+
+  <style>
+
+  #txt2 {
+    width: 80%;
+  }
+  </style>
+                <div class="task-list task-container" id="pending">
+                  <h3 style="text-shadow: 3px 3px 10px #3D3E3F;">Not started</h3>
+                </div>
+
+                <div class="task-list task-container" id="inProgress">
+                  <h3 style="text-shadow: 3px 3px 10px #3D3E3F;">Work In-Progress</h3>
+                </div>
+
+                <div class="task-list task-container" id="completed">
+                  <h3 style="text-shadow: 3px 3px 10px #3D3E3F;">Completed</h3>
+                </div>
+
+                <div class="task-list">
+                  <h3 style="text-shadow: 3px 3px 10px #3D3E3F;">Add a task</h3>
+                  <form id="todo-form">
+                    <input type="text" placeholder="Title" style="background-color: white; border:none; border-radius: 6px; padding: 6px; width: 230px;" />
+                    <textarea placeholder="Description" style="background-color: white; font-family: Arial; border:none; border-radius: 6px; padding: 6px; width: 230px;" ></textarea>
+                    <input type="text" id="datepicker"style="background-color: white; border:none; font-family: Arial; border-radius: 6px; padding: 6px; width: 230px;"  placeholder="Due Date (dd/mm/yyyy)" />
+                    <input type="button" style="background-color: dodgerblue; color: white; box-shadow: 2px 2px 10px #3D3E3F; border:none; border-radius: 6px; padding: 6px; width: 230px;" class="btn btn-primary" value="Add Task" onclick="todo.add();" />
+                  </form>
+
+
+                  <div id="delete-div">
+                    Drag Here to Delete
+                  </div>
+                </div>
+
+                <div style="clear:both;"></div>
+                <script type="text/javascript" src="lib/jQuery/jquery.min.js"></script>
+                <script type="text/javascript" src="lib/Bootstrap/bootstrap.min.js"></script>
+                <script type="text/javascript" src="lib/jQuery/jquery.ui.min.js"></script>
+
+                <script type="text/javascript">
+                  $( "#datepicker" ).datepicker();
+                            $( "#datepicker" ).datepicker("option", "dateFormat", "dd/mm/yy");
+
+                            $(".task-container").droppable();
+                            $(".todo-task").draggable({ revert: "valid", revertDuration:200 });
+                            todo.init();
+                </script>
+
+              </div>
+
+
+    </div>
+    <style>
+      body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  font-family: "Segoe UI";
+}
+
+#outerContainer {
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+}
+
+#innerContainer {
+  width: 100%;
+  max-width: 75%;
+}
+</style>
+<script>
+  var voice = document.getElementById("voice");
+  var txtInput = document.getElementById("txtInput");
+  var sayitBtn = document.getElementById("sayitBtn");
+
+
+sayitBtn.onclick = function() {
+  speech = new SpeechSynthesisUtterance(txtInput.value);
+  speech.voice = speechSynthesis.getVoices()[parseInt(voice.value)];
+  speechSynthesis.speak(speech);
+}
+</script>
+						</div>
+          </div>
+
+</body>
+</html>

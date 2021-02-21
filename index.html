@@ -1,0 +1,1573 @@
+  <!DOCTYPE html>
+
+
+  <html lang="en" dir="ltr">
+
+
+  <head>
+
+
+  <meta charset="utf-8">
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3pro.css">
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" charset="utf-8"></script>
+
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+  <style>
+
+
+  html {
+
+
+  scroll-behavior: smooth;
+
+  font-family: 'Baloo Paaji', cursive;
+
+
+  }
+  </style>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" charset="utf-8"></script>
+
+
+
+
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+
+
+  </head>
+
+
+  <body>
+
+
+
+
+
+
+  <header>
+
+
+  <div class="inner-width" id="top">
+
+
+  <a href="" class="logo1"><img src="logo.png" alt=""></a>
+
+  <i class="menu-toggle-btn fas fa-bars"></i>
+
+  <nav class="navigation-menu">
+
+  <a href="index.html"style="color: white;" ><i class="fas fa-home home"></i>Home</a>
+  <a href="classes.html"style="color: white;"><i class="fab fa-buffer works"></i>Classes</a>
+  <a href="creategames.html"style="color: white;"><i class="fas fa-users team"></i>Create games</a>
+  <a href="contact.html" style="color: white;"><i class="fas fa-headset contact"></i>Contact</a>
+
+
+  <a href="main.html"style="color: white;"><i class="fas fa-align-left about"></i> Join a class</i></a>
+
+
+
+
+
+
+  </nav>
+
+
+
+
+
+
+  </div>
+
+
+
+
+
+
+  </header>
+
+
+
+
+
+
+
+
+
+
+  <style>
+
+  *{
+
+
+  margin: 0;
+
+
+  padding: 0;
+
+
+  text-decoration: none;
+
+
+
+
+  }
+
+  header{
+
+
+  height: 90px;
+
+  background: linear-gradient(to right, #00DCFF, dodgerblue );
+
+
+
+  width: 100%;
+
+
+  }
+
+
+  .inner-width{
+
+
+  max-width: 1000px;
+
+
+  padding: 0 10px;
+
+
+  margin: auto;
+
+
+  }
+
+
+
+
+
+
+  .logo{
+
+
+  float: left;
+
+
+  padding: 20px 0;
+
+
+  margin-top: 4px;
+
+
+
+
+
+
+  }
+
+
+
+
+
+
+  .logo img{
+
+
+  height: 0px;
+
+
+  }
+
+
+  .logo1{
+
+
+  float: left;
+
+
+  padding: 20px 0;
+
+
+  margin-top: -10px;
+
+
+  }
+
+
+
+
+
+
+  .logo1 img{
+
+
+  height: 95px;
+
+  z-index: 1000;
+  margin-top: -8px;
+
+  border-radius: 20px;
+
+
+
+
+
+
+  }
+
+
+
+
+
+
+  .navigation-menu{
+
+
+  float: right;
+
+
+  display: flex;
+
+
+  align-items: center;
+
+
+  min-height: 90px;
+
+
+  }
+
+
+
+
+
+
+  .navigation-menu a{
+
+
+  margin-left: 10px;
+
+
+  color: #ddd;
+
+
+  text-transform: uppercase;
+
+
+  font-size: 18spx;
+
+
+  padding: 12px 20px;
+
+
+  border-radius: 4px;
+
+
+  transition: .3s linear;
+
+
+  }
+
+
+
+
+
+
+  .navigation-menu a:hover{
+
+
+  background: #fff;
+
+
+  color: #2f3640;
+
+
+  transform: scale(1.1);
+
+
+  }
+
+
+
+
+
+
+  .navigation-menu i{
+
+
+  margin-right: 8px;
+
+
+  font-size: 16px;
+
+
+  }
+
+
+
+
+
+
+  .home{
+
+
+  color: #ff6b6b;
+
+
+  }
+
+
+
+
+
+
+  .about{
+
+
+  color: #56F0FF;
+
+
+  }
+
+
+
+
+
+
+  .works{
+
+
+  color: #feca57;
+
+
+  }
+
+
+
+
+
+
+  .team{
+
+
+  color: #5f27cd;
+
+
+  }
+
+
+
+
+
+
+  .contact{
+
+
+  color: #1dd1a1;
+
+
+  }
+
+
+
+
+
+
+  .menu-toggle-btn{
+
+
+
+
+
+
+  float: right;
+
+
+
+
+
+
+  height: 90px;
+
+
+
+
+
+
+  line-height: 90px !important;
+
+
+
+
+
+
+
+
+
+
+  color: #fff;
+
+
+
+
+
+
+  font-size: 26px;
+
+
+
+
+
+
+  display: none !important;
+
+
+
+
+
+
+  cursor: pointer;
+
+
+
+
+
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  @media screen and (max-width:700px) {
+
+
+
+
+
+
+  .menu-toggle-btn{
+
+
+
+
+
+
+  display: block !important;
+
+
+
+
+
+
+
+
+
+
+  }
+
+
+
+
+  .navigation-menu{
+
+
+
+
+
+
+  position: fixed;
+
+
+
+
+
+
+  width: 100%;
+
+
+
+
+
+
+  max-width: 400px;
+  background: #172b4d;
+  top: 90px;
+  right: 0;
+  display: none;
+  padding: 20px 40px;
+  box-sizing: border-box;
+
+  }
+
+  .navigation-menu::before{
+
+  content: "";
+
+  border-left: 10px solid transparent;
+
+  border-bottom: 10px solid #172b4d;
+
+
+
+
+
+
+  position: absolute;
+
+
+
+
+
+
+  top: -10px;
+
+
+
+
+
+
+  right: 10px;
+
+
+
+
+
+
+  }
+
+
+
+
+
+
+  .navigation-menu a{
+
+
+
+
+
+
+  display: block;
+
+
+
+
+
+
+  margin: 10px 0;
+
+
+  }
+
+
+
+
+
+
+    .navigation-menu.active{
+
+
+
+
+
+
+    display: block;
+
+
+
+
+
+
+    }
+
+
+
+
+
+
+    }
+
+
+
+
+
+
+    </style>
+
+
+
+
+
+
+    <script>
+
+
+
+
+
+
+    $(".menu-toggle-btn").click(function(){
+
+
+    $(this).toggleClass("fa-times");
+
+
+    $(".navigation-menu").toggleClass("active");
+
+
+    });
+
+
+    </script>
+
+    <body>
+    <div id="img">
+    <br><br>
+
+    <center><p style="font-size: 80px; color: #F3F3F3 ;   font-family: Helvetica;   text-shadow: 4px 4px 10px black;"><b>Welcome to Learn-key</b></p>
+    <br>
+    <br><br>
+    </div><div id="bck">
+   <br><br>
+   <center><div class="wrapper" style="font-size: 25px; ">
+
+  Learn-key is a free platform that takes school work and itegrates them into games. With Learn-key, you can chat with your students or your teacher, post work, complete and submit work and much more! With Learn-key, you can have a completly new experience each assignment you complete!   </div></center>
+   <style>
+   #img {
+     background: linear-gradient(to right, #00DCFF, dodgerblue );
+   width: 100%;
+   border-bottom-left-radius: 80px;
+   border-bottom-right-radius: 80px;
+   box-shadow: 0 0px 0px 0 rgba(0, 0,   0, 0.2), 0 15px 20px 0 #C3C3C3;
+   z-index: -1;
+   position: relative;
+   }
+   </style>
+
+    <br>
+    <center><a href="main.html"><div class="btn"id="learn" style="width: auto; margin: 0 auto;margin-top: 10px;width: 300px;">Let's get started!</div></a></center>
+  <br><BR>
+  <center><div id="container">
+    <br>
+    <center><h1 style="font-size: 60px; font-family: Helvetica;"><b>Add tasks</b></h1></center>
+    <center><img src="https://videodesign.net/wp-content/uploads/edd/2020/01/010_Girl-Learning-At-Home-Desk-720p.jpg" alt="" style="width: 100%; height: 40%; margin-top: -50px;"></center>
+  <br>
+  <p style="font-size: 23px; width: 85%;color: #222;">Add tasks to your schedule that your teacher assigns to remind you of your work. Tasks will autosave even after you've left the tab.</p>
+  <br>
+  <a href="main.html#t2"><button class="btn">Get started with tasks</button></a>
+  <br><br><br>
+  </div></center>
+  <style>
+  #container {
+  width: 500px;
+  box-shadow: 0.5px 0.5px 50px #383738;
+
+
+  }
+  </style>
+    <style>
+    .btn {
+   display: inline-block;
+   margin: 15px 15px 0;
+   padding: .6em 1.1em;
+   font-family: 'Baloo Paaji', cursive;
+
+   font-size: 26px;
+   font-size: 1.625rem;
+   text-decoration: none;
+   outline: none;
+   color: #fff;
+   background-color: #007DFF;
+   border-radius: 3px;
+   -webkit-background-clip: padding-box;
+   background-clip: padding-box;
+   -webkit-box-shadow: 0 0 0 -2px cyan, 0 0 0 -1px #fe4365;
+   box-shadow: 0 0 0 -2px cyan, 0 0 0 -1px #fe4365;
+   border: none;
+   -webkit-transition: -webkit-box-shadow .3s;
+   transition: box-shadow .3s;
+    }
+    .btn:hover, a.btn:focus {
+   -webkit-box-shadow: 0 0 0 2px cyan, 0 0 0 4px skyblue;
+   box-shadow: 0 0 0 2px cyan, 0 0 0 4px skyblue;
+   -webkit-transition-timing-function: cubic-bezier(0.6, 4, 0.3, 0.8);
+   transition-timing-function: cubic -bezier(0.6, 4, 0.3, 0.8);
+   -webkit-animation: gelatine 0.5s 1;
+   animation: gelatine 0.5s 1;
+    }
+
+
+    .btn:active,
+    .btn-secondary:active {
+   -webkit-transition-duration: 0;
+   transition-duration: 0;
+   -webkit-box-shadow: 0 0 0 2px cyan, 0 0 0 4px #3ac7bd;
+   box-shadow: 0 0 0 2px cyan, 0 0 0 4px #3ac7bd;
+    }
+
+
+    @keyframes gelatine {
+   from, to {
+     -webkit-transform: scale(1, 1);
+     transform: scale(1, 1);
+   }
+
+   25% {
+     -webkit-transform: scale(0.9, 1.1);
+    transform: scale(0.9, 1.1);
+     }
+
+   50% {
+     -webkit-transform: scale(1.1, 0.9);
+     transform: scale(1.1, 0.9);
+   }
+
+   75% {
+     -webkit-transform: scale(0.95, 1.05);
+     transform: scale(0.95, 1.05);
+   }
+
+   from, to {
+     -webkit-transform: scale(1, 1);
+     transform: scale(1, 1);
+   }
+
+   25% {
+     -webkit-transform: scale(0.9, 1.1);
+     transform: scale(0.9, 1.1);
+   }
+
+   50% {
+     -webkit-transform: scale(1.1, 0.9);
+     transform: scale(1.1, 0.9);
+   }`
+
+   75% {
+     -webkit-transform: scale(0.95, 1.05);
+     transform: scale(0.95, 1.05);
+   }
+    }
+    @-webkit-keyframes gelatine {
+   from, to {
+     -webkit-transform: scale(1, 1);
+     transform: scale(1, 1);
+   }
+
+   25% {
+     -webkit-transform: scale(0.9, 1.1);
+     transform: scale(0.9, 1.1);
+   }
+
+   50% {
+     -webkit-transform: scale(1.1, 0.9);
+     transform: scale(1.1, 0.9);
+   }
+
+   75% {
+     -webkit-transform: scale(0.95, 1.05);
+     transform: scale(0.95, 1.05);
+   }
+
+   from, to {
+     -webkit-transform: scale(1, 1);
+   transform: scale(1, 1);
+    }
+
+    25% {
+   -webkit-transform: scale(0.9, 1.1);
+   transform: scale(0.9, 1.1);
+    }
+
+    50% {
+   -webkit-transform: scale(1.1, 0.9);
+   transform: scale(1.1, 0.9);
+   }
+
+   75% {
+     -webkit-transform: scale(0.95, 1.05);
+     transform: scale(0.95, 1.05);
+   }
+    }
+
+    </style>
+
+
+    </div>
+    <style>
+
+
+
+
+    .align-right {
+   float: right;
+   margin-left: 20px;
+    }
+    .slide-in {
+   opacity: 0;
+   transition: all 0.5s;
+    }
+    .align-left.slide-in {
+   transform: translateX(-30%) scale(0.95);
+    }
+
+
+    .slide-in.active {
+   opacity: 1;
+   transform: translateX(0%) scale(1);
+    }
+
+    </style>
+    <script>
+   function debounce (fn, wait = 20, immediate = true) {
+   let timeout
+
+   return function () {
+     const context = this
+     const args = arguments
+     const callNow = immediate && !timeout
+
+     const later = function () {
+    timeout = null
+    if (!immediate) fn.apply(context, args)
+     }
+
+     clearTimeout(timeout)
+     timeout = setTimeout(later, wait)
+
+    if (callNow) fn.apply(context, args)
+     }
+   }
+
+   const sliderImages = document.querySelectorAll('.slide-in')
+
+   function checkSlide () {
+     sliderImages.forEach(sliderImage => {
+    const slideInAt = (window.scrollY + window.innerHeight)
+   - sliderImage.height / 2
+
+    const imageBottom = sliderImage.offsetTop + sliderImage.height
+    const isHalfShown = slideInAt > sliderImage.offsetTop
+    const isNotScrolledPast = window.scrollY < imageBottom
+
+    if (isHalfShown && isNotScrolledPast) {
+   sliderImage.classList.add('active');
+    } else {
+   sliderImage.classList.remove('active');
+    }
+     });
+   }
+
+   window.addEventListener('scroll', debounce(checkSlide));
+   </script>
+   <br>
+
+
+
+   <style>
+     .wrapper {
+     font-size:20px;
+     width: 60%;
+     font-family: Arial;
+   }
+   .wrapper.bigtext {
+     font-size:30px;
+   }
+   button {
+     margin-top:20px;
+     display: inline-block;
+     background: dodgerblue;
+     padding: 15px;
+     border-radius: 6px;
+     border: 0px solid transparent;
+   color: white;
+   font-size: 20px;
+    }
+    </style>
+    <script>
+   $('button').click(function() {
+   $('.wrapper').toggleClass('bigtext');
+    });
+    </script>
+
+     <div id="popup">
+    <div class="popup-card">
+   <div class="popup-card-content">
+     <a href="#" style="margin-top: -30px; font-size: 25px;">Close <i class="fas fa-times-circle" style="font-size: 30px;"></i></a>
+    <br>
+
+   </div>
+    </div>
+     </div>
+    <style>
+
+
+    a{
+   text-decoration:none;
+   color:#494949;
+    }
+
+    .formbox{
+   position:relative;
+   width:16%;
+   margin:20px 0 0 30px;
+    }
+    #popup{
+   position:fixed;
+   left:0;
+   top:0;
+   width:100%;
+   height:100%;
+   background-color: rgba(0,0,0, .5);
+   opacity: 0;
+   visibility: hidden;
+   transition: all 0.4s ease;
+    }
+    #popup:target{
+   opacity: 1;
+   visibility: visible;
+    }
+    .popup-card{
+   position:absolute;
+   left:50%;
+   top:50%;
+   transform:translate(-50%, -50%);
+   width:50%;
+   height:50%;
+   padding-top:100px;
+   background-color:#fff;
+   box-shadow: 2px 3px 2px #f1f1f1;
+    }
+    .popup-card-content{
+   text-align:center;
+   font-size:28px;
+   font-weight:bold;
+    }
+
+    </style>
+    <br>
+    <div class="box" id="games">
+    <h1 class="txt2">
+   <span class="text-wrapper">
+     <span class="letters">Setting it up</span>
+     <span class="line"></span>
+   </span>
+    </h1>
+    <center><div id="txt">
+    <br>
+    <div class="container">
+   <div class="card">
+     <img src="https://static.vecteezy.com/system/resources/previews/000/518/198/original/woman-working-with-computer-bright-colorful-vector-illustration.jpg"/>
+     <div class="card__content">
+    <h2>Join a class</h2>
+
+    <p>
+    Join or create a class easily and share the class code with students. <a href="main.html#1" style="color: dodgerblue;">Join a class.</a>   </p>
+    <a href="#" class="link">Create a class</a>
+     </div>
+   </div>
+   <div class="card">
+    <img src="https://i.pinimg.com/originals/b8/3e/a9/b83ea9d2c5dabb571de19ae5851f42c9.jpg"/>
+     <div class="card__content">
+    <h2>Set up work</h2>
+    <p>
+  Set up assignments by submitting values, then we will integrate them into games.
+    </p>
+    <a href="Learn-key.html" class="link">Create games/work</a>
+     </div>
+   </div>
+   <div class="card">
+     <img src="http://clipartmag.com/images/students-working-clipart-4.png"/>
+     <div class="card__content">
+    <h2>Assign work</h2>
+    <p>
+  To assign work to students, use the chat feature in your classroom.  <a href="main.html" class="link">Join your class</a>
+     </div>
+   </div>
+    </div>
+    <style>
+    *{
+   margin:0;
+   padding:0;
+   box-sizing:border-box;
+   font-family:sans-serif;
+  }
+  body{
+    min-height:100vh;
+    display:grid;
+    place-items:center;
+    background-color:#222;
+  }
+  .container{
+    max-width:1000px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+  }
+  .card{
+    min-height:200px;
+    width:260px;
+    margin:40px 10px;
+    padding:1rem;
+    cursor:pointer;
+    background-color:#fff;
+    border-radius: 4px;
+  }
+  .card img{
+    width:100%;
+    height:160px;
+    border-radius:10px;
+    position:relative;
+    z-index:1000;
+    transition:all .5s ease-in-out;
+  }
+  .card__content{
+    margin:1rem 0;
+    color:#222;
+    overflow:hidden;
+    margin-top:-200px;
+    opacity:0;
+    visibility:hidden;
+    transition:all .5s ease-in-out;
+  }
+  .card__content h2{
+    margin:.6rem auto;
+    text-align:center;
+  }
+  .card__content p{
+    font-size:1.1rem;
+    line-height:1.8rem;
+    text-align:center;
+  }
+  .card__content .link{
+    width:200px;
+    padding:10px 15px;
+    display:block;
+    text-align:center;
+    margin:.6rem auto;
+    font-size:1.1rem;
+    color:#222;
+    text-decoration:none;
+    background-color:white;
+    border-radius:10px;
+    transition:.3s;
+    border: 1px solid #222;
+    box-shadow: 2px 2px 10px #222;
+  }
+  .card__content .link:hover{
+    color:#fff;
+    background-color:dodgerblue;
+    border: none;
+  }
+  .card:hover img{
+    margin-top:-60px;
+    box-shadow:0 0 4px 6px rgba(0,0,0,0.3);
+  }
+  .card:hover>.card__content{
+    margin-top:0;
+    opacity:1;
+    visibility:visible;
+  }
+  @media screen and (max-width:800px){
+    .container{
+   flex-wrap:wrap;
+    }
+  }
+
+  </style>  <br>
+  <center><div class="wrapper" style="font-size: 25px; width: 90%;">
+
+  Learn-key is very easy to set up, you can  <a href="createaclass.html" style="text-decoration: none; color: blue;">create a class</a> easily by selecting a class id. It may take an hour to get your class ready for you. You can <a href="creategames.html" style="color: blue; text-decoration: none;">add games</a> and assign them inside your classroom. </div></center><br><br>
+  <br>
+  </div></center>
+  </div>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+  <style>
+    #txt {
+   width: 60%;
+   text-align: center:
+    }
+    .txt2 {
+    font-weight: 400;
+  font-size: 60px;
+    color: white;
+    text-shadow: 2px 2px 7px black;
+  }
+
+  .txt2 .text-wrapper {
+    position: relative;
+    display: inline-block;
+    padding-top: 0.1em;
+    padding-right: 0.05em;
+    padding-bottom: 0.15em;
+  }
+
+  .txt2 .line {
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background-color: #fff;
+    transform-origin: 100% 100%;
+    bottom: 0;
+  }
+
+  .txt2 .letter {
+    display: inline-block;
+    line-height: 1em;
+  }
+  </style>
+  <script>
+    var textWrapper = document.querySelector('.txt2 .letters');
+  textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+  anime.timeline({loop: true})
+    .add({
+   targets: '.txt2 .line',
+   scaleX: [0,1],
+   opacity: [0.5,1],
+   easing: "easeInOutExpo",
+   duration: 900
+    }).add({
+   targets: '.txt2 .letter',
+   opacity: [0,1],
+   translateX: [40,0],
+   translateZ: 0,
+   scaleX: [0.3, 1],
+   easing: "easeOutExpo",
+   duration: 800,
+   offset: '-=600',
+   delay: (el, i) => 150 + 25 * i
+    }).add({
+   targets: '.txt2',
+   opacity: 0,
+   duration: 1000,
+   easing: "easeOutExpo",
+   delay: 5000
+    });
+    </script>
+    </div>
+  <style>
+    @import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+  @import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+  :root {
+
+    --green: linear-gradient(to right, #00DCFF, cyan );
+
+  }
+
+  body {
+    background-color: var(--black);
+    color: var(--white);
+    font-family: 'Muli', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    overflow-x: hidden;
+  }
+
+  h1 {
+    text-align: center;
+    margin: 2rem auto;
+  }
+
+  .box {
+    background: var(--green);
+    color: var(--black);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    border-radius: 10px;
+    transform: translateX(400%);
+    transition: transform 0.4s ease;
+  }
+
+  .box:nth-of-type(even) {
+   transform: translateX(-400%);
+  }
+
+  .box.show {
+    transform: translateX(0);
+  }
+
+  .box h2 {
+    font-size: 36px;
+  }
+
+
+
+
+  </style>
+  <Script>
+    const boxes = document.querySelectorAll('.box');
+
+  window.addEventListener('scroll', checkBoxes);
+
+  checkBoxes();
+
+  function checkBoxes() {
+    const triggerBottom = (window.innerHeight / 5 * 4);
+
+    boxes.forEach(box => {
+   const boxTop = box.getBoundingClientRect().top;
+
+   if(boxTop < triggerBottom) {
+     box.classList.add('show');
+   } else {
+     box.classqst.remove('show');
+   }
+    })
+  }
+  </script>
+  <h1 class="ml11">
+    <span class="text-wrapper">
+      <span class="line line1"></span>
+      <span class="letters" style="  font-size: 1.9em; color: royalblue;">Create games</span>
+    </span>
+  </h1>
+  <center><div class="txt">
+<p style="font-size:23px; color: black;">With Learn-key, you can easily create games and get a link for yor students by either selecting values and submitting them, or simply customizing your game with buttons to your liking. </p>
+  </div></center>
+  <br>
+  <center>
+    <center><a href="creategames.html"><button class="btn">Get started creating games</button></a></center>
+    <br>
+  <img src="https://static.vecteezy.com/system/resources/previews/000/182/827/non_2x/vector-creator-illustration.jpg" alt="" style="width: 550px; height: 400px; border-radius: 6px; box-shadow: 2px 2px 20px #222;"></center>
+
+  <style>
+  .txt {
+width: 60%;
+  }
+  #cardbruh {
+    width: 500px;
+box-shadow: 5px 5px 50px #222;
+padding: 0px;
+border-radius: 6px;
+background-image: url('https://wallpaperplay.com/walls/full/e/c/3/37704.jpg');
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: 100% 100%;
+
+  }
+  </style>
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script><style>
+  <style>
+  .ml11 {
+    font-weight: 1000;
+    font-size: 4.5em;
+    color: linear-gradient(to right, #00DCFF, dodgerblue );
+
+  }
+
+  .ml11 .text-wrapper {
+    position: relative;
+    display: inline-block;
+    padding-top: 0.1em;
+    padding-right: 0.05em;
+    padding-bottom: 0.15em;
+  }
+
+  .ml11 .line {
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 3px;
+    background-color: #fff;
+    transform-origin: 0 50%;
+  }
+
+  .ml11 .line1 {
+    top: 0;
+    left: 0;
+  }
+
+  .ml11 .letter {
+    display: inline-block;
+    line-height: 1em;
+  }
+  </style>
+  <Script>
+  var textWrapper = document.querySelector('.ml11 .letters');
+  textWrapper.innerHTML = textWrapper.textContent.replace(/([^\x00-\x80]|\w)/g, "<span class='letter'>$&</span>");
+
+  anime.timeline({loop: true})
+    .add({
+      targets: '.ml11 .line',
+      scaleY: [0,1],
+      opacity: [0.5,1],
+      easing: "easeOutExpo",
+      duration: 700
+    })
+    .add({
+      targets: '.ml11 .line',
+      translateX: [0, document.querySelector('.ml11 .letters').getBoundingClientRect().width + 10],
+      easing: "easeOutExpo",
+      duration: 700,
+      delay: 100
+    }).add({
+      targets: '.ml11 .letter',
+      opacity: [0,1],
+      easing: "easeOutExpo",
+      duration: 600,
+      offset: '-=775',
+      delay: (el, i) => 34 * (i+1)
+    }).add({
+      targets: '.ml11',
+      opacity: 0,
+      duration: 1000,
+      easing: "easeOutExpo",
+      delay: 6000
+    });
+    </script>
+    <style>
+  footer{
+  bottom: 0;
+  }
+
+  @media (max-height:800px){
+  header { padding-top:40px; }
+  }
+
+
+  .footer-distributed{
+   background: linear-gradient(to top, royalblue, dodgerblue );
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  font: bold 16px sans-serif;
+  padding: 50px 50px 60px 50px;
+  margin-top: 80px;
+  }
+
+  .footer-distributed .footer-left,
+  .footer-distributed .footer-center,
+  .footer-distributed .footer-right{
+  display: inline-block;
+  vertical-align: top;
+  }
+
+
+  .footer-distributed .footer-left{
+  width: 30%;
+  }
+
+  .footer-distributed h3{
+  color:  #ffffff;
+  font: normal 36px 'Cookie', cursive;
+  margin: 0;
+  }
+
+
+  .footer-distributed .footer-left img{
+  width: 30%;
+  }
+
+  .footer-distributed h3 span{
+  color:  #e0ac1c;
+  }
+
+
+  .footer-distributed .footer-links{
+  color:  #ffffff;
+  margin: 20px 0 12px;
+  }
+
+  .footer-distributed .footer-links a{
+  display:inline-block;
+  line-height: 1.8;
+  text-decoration: none;
+  color:  inherit;
+  }
+
+  .footer-distributed .footer-company-name{
+  color:  #8f9296;
+  font-size: 14px;
+  font-weight: normal;
+  margin: 0;
+  }
+
+
+  .footer-distributed .footer-center{
+  width: 35%;
+  }
+
+
+  .footer-distributed .footer-center i{
+  background-color:  #33383b;
+  color: #ffffff;
+  font-size: 25px;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 42px;
+  margin: 10px 15px;
+  vertical-align: middle;
+  }
+
+  .footer-distributed .footer-center i.fa-envelope{
+  font-size: 17px;
+  line-height: 38px;
+  }
+
+  .footer-distributed .footer-center p{
+  display: inline-block;
+  color: #ffffff;
+  vertical-align: middle;
+  margin:0;
+  }
+
+  .footer-distributed .footer-center p span{
+  display:block;
+  font-weight: normal;
+  font-size:14px;
+  line-height:2;
+  }
+
+  .footer-distributed .footer-center p a{
+  color:  cyan;
+  text-decoration: none;
+  font-family: Helvetica;
+  }
+
+
+
+  .footer-distributed .footer-right{
+  width: 30%;
+  }
+
+  .footer-distributed .footer-company-about{
+  line-height: 20px;
+  color:  white;
+  font-size: 13px;
+  font-weight: normal;
+  margin: 0;
+  }
+
+  .footer-distributed .footer-company-about span{
+  display: block;
+  color:  #ffffff;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  }
+
+  .footer-distributed .footer-icons{
+  margin-top: 25px;
+  }
+
+  .footer-distributed .footer-icons a{
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  background-color:  #33383b;
+  border-radius: 2px;
+
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 35px;
+
+  margin-right: 3px;
+  margin-bottom: 5px;
+  }
+
+
+
+  @media (max-width: 880px) {
+
+  .footer-distributed .footer-left,
+  .footer-distributed .footer-center,
+  .footer-distributed .footer-right{
+    display: block;
+    width: 100%;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  .footer-distributed .footer-center i{
+    margin-left: 0;
+    padding: 60px;
+  }
+
+  }
+  </style>
+  <footer class="footer-distributed">
+
+      <div class="footer-left">
+          <img src="logo.png">
+
+        <p class="footer-links">
+          <a href="index.html">Home</a>
+          |
+          <a href="creategames.html">Create games</a>
+          |
+          <a href="main.html">Join a class</a>
+          |
+          <a href="contact.html">Contact</a>
+        </p>
+
+      </div>
+
+      <div class="footer-center">
+        <div>
+          <i class="fa fa-map-marker"></i>
+            <p>
+          Turning school problems into games!</p>
+        </div>
+
+        <div>
+          <i class="fa fa-phone"></i>
+          <p><a href="createaclass.html" style="text-decoration: none;"> Create a class</a></p>
+        </div>
+        <div>
+          <i class="fa fa-envelope"></i>
+          <p><a href="contact.html">Contact us</a></p>
+        </div>
+      </div>
+      <div class="footer-right">
+        <p class="footer-company-about">
+          <span style="font-size: 25px;">About us</span>
+  <p style="font-weight: none; color: #E4E0E4; font-size: 18px;">We're a free platform that allows teachers to communicate and hand in school work with teachers. We also offer a unique tool that takes school problems and integrates them into games.</p>
+        <div class="footer-icons">
+          <a href="index.html#games"><i class="fas fa-gamepad"></i></a>
+          <a href="main.html#p2"><i class="fas fa-book"></i></a>
+          <a href="index.html"><i class="fas fa-home"></i></a>
+          <a href="main.html"><i class="fas fa-users"></i></a>
+        </div>
+      </div>
+    </footer>

@@ -1,0 +1,173 @@
+
+<html>
+ <body>
+
+<style>
+
+
+</style>
+<br><br><br><br>
+<center><h1 style='font-size: 70px; color: white; text-shadow: 2px 2px 20px cyan; font-family: Helvetica;'>Math Question</h1></center>
+<br> <center><div class="txt">
+<p style="font-size: 21px; color: white; text-shadow: 2px 2px 20px #222;">Solve the following question to proceed with the game.<br> Your current grade level that has been assigned is grade 3.<BR><br>3 x 3</p>
+  </div></center>
+  <style>
+    .txt {
+      width: 60%;
+    }
+    body {
+  background-image: url('http://wallpapercave.com/wp/vPopEp4.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+    </style>
+  <script>
+    function validateForm() {
+      var x = document.forms["myForm"]["fname"].value;
+      if (x != "9") {
+        alert("I'm sorry, but that's incorrect, please try again.");
+        return false;
+      }
+    }
+  </script>
+  <style>
+  .btn {
+ display: inline-block;
+ margin: 15px 15px 0;
+ padding: .6em 1.1em;
+ font-family: Helvetica;
+
+ font-size: 26px;
+ font-size: 1.625rem;
+ text-decoration: none;
+ outline: none;
+ color: #fff;
+ background-color: #007DFF;
+ border-radius: 3px;
+ -webkit-background-clip: padding-box;
+ background-clip: padding-box;
+ -webkit-box-shadow: 0 0 0 -2px cyan, 0 0 0 -1px #fe4365;
+ box-shadow: 0 0 0 -2px cyan, 0 0 0 -1px #fe4365;
+ border: none;
+ -webkit-transition: -webkit-box-shadow .3s;
+ transition: box-shadow .3s;
+  }
+  .btn:hover, a.btn:focus {
+ -webkit-box-shadow: 0 0 0 2px cyan, 0 0 0 4px skyblue;
+ box-shadow: 0 0 0 2px cyan, 0 0 0 4px skyblue;
+ -webkit-transition-timing-function: cubic-bezier(0.6, 4, 0.3, 0.8);
+ transition-timing-function: cubic -bezier(0.6, 4, 0.3, 0.8);
+ -webkit-animation: gelatine 0.5s 1;
+ animation: gelatine 0.5s 1;
+  }
+
+
+  .btn:active,
+  .btn-secondary:active {
+ -webkit-transition-duration: 0;
+ transition-duration: 0;
+ -webkit-box-shadow: 0 0 0 2px cyan, 0 0 0 4px #3ac7bd;
+ box-shadow: 0 0 0 2px cyan, 0 0 0 4px #3ac7bd;
+  }
+
+
+  @keyframes gelatine {
+ from, to {
+   -webkit-transform: scale(1, 1);
+   transform: scale(1, 1);
+ }
+
+ 25% {
+   -webkit-transform: scale(0.9, 1.1);
+  transform: scale(0.9, 1.1);
+   }
+
+ 50% {
+   -webkit-transform: scale(1.1, 0.9);
+   transform: scale(1.1, 0.9);
+ }
+
+ 75% {
+   -webkit-transform: scale(0.95, 1.05);
+   transform: scale(0.95, 1.05);
+ }
+
+ from, to {
+   -webkit-transform: scale(1, 1);
+   transform: scale(1, 1);
+ }
+
+ 25% {
+   -webkit-transform: scale(0.9, 1.1);
+   transform: scale(0.9, 1.1);
+ }
+
+ 50% {
+   -webkit-transform: scale(1.1, 0.9);
+   transform: scale(1.1, 0.9);
+ }`
+
+ 75% {
+   -webkit-transform: scale(0.95, 1.05);
+   transform: scale(0.95, 1.05);
+ }
+  }
+  @-webkit-keyframes gelatine {
+ from, to {
+   -webkit-transform: scale(1, 1);
+   transform: scale(1, 1);
+ }
+
+ 25% {
+   -webkit-transform: scale(0.9, 1.1);
+   transform: scale(0.9, 1.1);
+ }
+
+ 50% {
+   -webkit-transform: scale(1.1, 0.9);
+   transform: scale(1.1, 0.9);
+ }
+
+ 75% {
+   -webkit-transform: scale(0.95, 1.05);
+   transform: scale(0.95, 1.05);
+ }
+
+ from, to {
+   -webkit-transform: scale(1, 1);
+ transform: scale(1, 1);
+  }
+
+  25% {
+ -webkit-transform: scale(0.9, 1.1);
+ transform: scale(0.9, 1.1);
+  }
+
+  50% {
+ -webkit-transform: scale(1.1, 0.9);
+ transform: scale(1.1, 0.9);
+ }
+
+ 75% {
+   -webkit-transform: scale(0.95, 1.05);
+   transform: scale(0.95, 1.05);
+ }
+  }
+
+  </style>
+  <body>
+    <center>
+      <form
+        name="myForm"
+
+        action="play2.html"
+        onsubmit="return validateForm()"
+        method="post"
+      >
+        <input type="text"  style="padding: 10px; border: 3px solid dodgerblue; border-radius:6px;"name="fname" />
+        <input type="submit" class = "btn" value="Submit" />
+      </form>
+    </center>
+  </body>
+</html>
